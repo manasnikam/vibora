@@ -9,15 +9,12 @@ advantage of some new Python features.
 
 > In case you have trouble with Vibora dependencies: `pip install vibora` to install it without the extra libraries.
 
-
 2. Create a file called `anything.py` with the following code:
 
-
 ```py
-from vibora import Vibora, JsonResponse
-
+from vibora import Vibora
+from vibora.responses import JsonResponse
 app = Vibora()
-
 
 @app.route('/')
 async def home():
@@ -29,9 +26,7 @@ if __name__ == '__main__':
 
 3. Run the server: `python3 anything.py`
 
-
 4. Open your browser at `http://127.0.0.1:8000`
-
 
 ### Creating a project
 
